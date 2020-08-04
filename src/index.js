@@ -4,11 +4,13 @@ import CommentDetail from './CommentDetail';
 
 const App = () => {
   return (
-    <CommentDetail
-      author={'Chuck Norris'}
-      time={'Today at 4:00PM'}
-      comment={'Cool ass comment'}
-    />
+    <div className="ui container comments">
+      <CommentDetail
+        author={'Chuck Norris'}
+        time={'Today at 4:00PM'}
+        comment={'Cool ass comment'}
+      />
+    </div>
   )
 };
 
