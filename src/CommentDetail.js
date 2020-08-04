@@ -1,10 +1,10 @@
 import React from 'react';
 
-const CommentDetail = ({ author, time, comment, image}) => {
+const CommentDetail = ({ author, time, content, avatar}) => {
   return (
     <div className="comment">
       <a href="/" className="avatar">
-        <img alt="avatar" src={image} />
+        <img alt="avatar" src={avatar} />
       </a>
       <div className="content">
         <a href="/" className="author">
@@ -13,7 +13,7 @@ const CommentDetail = ({ author, time, comment, image}) => {
         <div className="metadata">
           <span className="date">{time}</span>
         </div>
-        <div className="text">{comment}</div>
+        <div className="text">{content}</div>
       </div>
     </div>
   )
