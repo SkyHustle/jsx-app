@@ -6,9 +6,9 @@ const App = () => {
   return (
     <div className="ui container comments">
       <CommentDetail
-        author={'Chuck Norris'}
-        time={'Today at 4:00PM'}
-        comment={'Cool ass comment'}
+        author="Chuck Norris"
+        time="Today at 4:00PM"
+        comment="Cool ass comment"
       />
     </div>
   )
