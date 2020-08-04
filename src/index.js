@@ -7,13 +7,14 @@ import faker from 'faker';
 const App = () => {
   return (
     <div className="ui container comments">
-      <ApprovalCard />
-      <CommentDetail
-        author="Chuck Norris"
-        time="Today at 4:00PM"
-        content="Cool ass comment"
-        avatar={faker.image.avatar()}
-      />
+      <ApprovalCard>
+        <CommentDetail
+          author="Chuck Norris"
+          time="Today at 4:00PM"
+          content="Cool ass comment"
+          avatar={faker.image.avatar()}
+        />
+      </ApprovalCard>
       <CommentDetail
         author="Michael Jackson"
         time="Yesterday at 1:00PM"
@@ -27,7 +28,7 @@ const App = () => {
         avatar={faker.image.avatar()}
       />
     </div>
-  )
+  );
 };
 
 ReactDOM.render(<App />, document.querySelector('#root'))
