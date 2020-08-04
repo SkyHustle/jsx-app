@@ -15,18 +15,22 @@ const App = () => {
           avatar={faker.image.avatar()}
         />
       </ApprovalCard>
-      <CommentDetail
-        author="Michael Jackson"
-        time="Yesterday at 1:00PM"
-        content="bomb ass comment"
-        avatar={faker.image.avatar()}
-      />
-      <CommentDetail
-        author="Yo Mama"
-        time="last year at 11:00AM"
-        content="yo mama comment"
-        avatar={faker.image.avatar()}
-      />
+      <ApprovalCard>
+        <CommentDetail
+          author="Michael Jackson"
+          time="Yesterday at 1:00PM"
+          content="bomb ass comment"
+          avatar={faker.image.avatar()}
+        />
+      </ApprovalCard>
+      <ApprovalCard>
+        <CommentDetail
+          author="Yo Mama"
+          time="last year at 11:00AM"
+          content="yo mama comment"
+          avatar={faker.image.avatar()}
+        />
+      </ApprovalCard>
     </div>
   );
 };
