@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import CommentDetail from './CommentDetail';
-import ApprovalCard from './ApprovalCard'
+import ApprovalCard from './ApprovalCard';
 import faker from 'faker';
 
-const App = () => {
+function App() {
   return (
     <div className="ui container comments">
       <ApprovalCard>
@@ -12,27 +12,24 @@ const App = () => {
           author="Chuck Norris"
           time="Today at 4:00PM"
           content="Cool ass comment"
-          avatar={faker.image.avatar()}
-        />
+          avatar={faker.image.avatar()} />
       </ApprovalCard>
       <ApprovalCard>
         <CommentDetail
           author="Michael Jackson"
           time="Yesterday at 1:00PM"
           content="bomb ass comment"
-          avatar={faker.image.avatar()}
-        />
+          avatar={faker.image.avatar()} />
       </ApprovalCard>
       <ApprovalCard>
         <CommentDetail
           author="Yo Mama"
           time="last year at 11:00AM"
           content="yo mama comment"
-          avatar={faker.image.avatar()}
-        />
+          avatar={faker.image.avatar()} />
       </ApprovalCard>
     </div>
   );
-};
+}
 
 ReactDOM.render(<App />, document.querySelector('#root'))
