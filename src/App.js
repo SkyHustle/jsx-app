@@ -1,7 +1,7 @@
 import React from "react";
 import CommentDetail from './CommentDetail';
 import ApprovalCard from './ApprovalCard';
-import faker from 'faker';
+import { faker } from '@faker-js/faker';
 
 function App() {
   return (
