@@ -1,6 +1,6 @@
 import React from 'react';
 
-const CommentDetail = ({ author, time, content, avatar}) => {
+function CommentDetail({ author, time, content, avatar }) {
   return (
     <div className="comment">
       <a href="/" className="avatar">
@@ -16,7 +16,7 @@ const CommentDetail = ({ author, time, content, avatar}) => {
         <div className="text">{content}</div>
       </div>
     </div>
-  )
-};
+  );
+}
 
 export default CommentDetail;
