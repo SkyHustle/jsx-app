@@ -2,7 +2,7 @@ import React from 'react';
 
 function CommentDetail({ author, time, content, avatar }) {
   return (
-    <div className="comment">
+    <div className="content">
       <a href="/" className="avatar">
         <img alt="avatar" src={avatar} />
       </a>
